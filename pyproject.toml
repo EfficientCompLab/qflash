@@ -1,0 +1,22 @@
+[project]
+name = "qflash"
+version = "0.1.0"
+description = "Integer-only FlashAttention kernel in Triton"
+readme = "README.md"
+license = "Apache-2.0"
+license-files = ["LICENSE"]
+requires-python = ">=3.10"
+dependencies = [
+    "torch>=2.7.1",
+    "timm",
+]
+
+[project.urls]
+Repository = "https://github.com/EfficientCompLab/qflash"
+
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["qflash*"]
